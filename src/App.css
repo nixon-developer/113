@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+html p {
+    margin: 0;
+}
+
+html a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+input.form-control:focus {
+    box-shadow: none;
+    border-color: inherit;
+}
+
+svg.--icons {
+    width: 25px;
+    height: 25px;
+}
+
+.input-group-text {
+    cursor: pointer;
+}
+
+.--social-icons {
+    display: flex;
+    padding-top: 10px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.--social-icons .--icons:hover {
+    color: #fdc945;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.section-heading {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #232f3e;
+    color: white;
+    padding: 13px 33px;
+    border-radius: 25px;
+}
+
+.button:hover {
+    background-color: #febd69;
+    color: #131921;
+}

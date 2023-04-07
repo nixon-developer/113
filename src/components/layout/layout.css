@@ -1,0 +1,277 @@
+/* Header component start here */
+.--header-one-row,
+.--header-two-row,
+.--header-three-row,
+.--footer-one-row,
+.--footer-three-row {
+    align-items: center;
+}
+
+.--header-one,
+.--header-three,
+.--footer-one,
+.--footer-two,
+.--footer-three {
+    background-color: #232f3e
+}
+
+.--header-two {
+    background-color: #ffffff;
+}
+
+.--header-one-col {
+    text-align: end;
+}
+
+.--header-one-row p,
+.--header-one-row a {
+    color: #ffffff;
+}
+
+.--header-one-row a:hover {
+    color: #ff4500;
+}
+
+.--header-two-col-right .--links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px 0 90px;
+}
+
+.--header-two-col-right-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000000;
+}
+
+.--header-two-col-right-buttons a:hover {
+    color: #ff4500;
+}
+
+.--header-two-col-right-buttons .badge {
+    background-color: #ff4500;
+}
+
+.--header-three-col-left-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.--header-three-col-left-buttons a,
+.--header-three-col-right .dropdown button {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.--header-three-col-left-buttons a:hover {
+    color: #ff4500;
+}
+
+.--header-three-col-right .dropdown button:focus {
+    box-shadow: none;
+}
+
+.--header-three-col-right .dropdown-menu {
+    background-color: #232f3e;
+    width: 100%;
+    transform: translate3d(0px, 53px, 0px) !important;
+}
+
+.--header-three-col-right .dropdown-item {
+    padding: 20px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #3b4149;
+}
+
+.--header-three-col-right .dropdown-item:hover {
+    background-color: transparent;
+    color: #ff4500 !important;
+}
+/* Header component end here */
+
+
+/* Footer component start here */
+footer:not(:first-child) {
+    border-top: 1px solid #3b4149;
+}
+
+.--footer-one-col-left .--footer-one-col-left-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    gap: 10px;
+}
+
+.--footer-one-col-right .input-group-text {
+    background-color: #232f3e;
+    color: white;
+    padding: 8px 17px;
+}
+
+.--footer-two-col-first,
+.--footer-two-col-second,
+.--footer-two-col-third,
+.--footer-two-col-four,
+.--footer-two-col-first a,
+.--footer-two-col-second a,
+.--footer-two-col-third a,
+.--footer-two-col-four a {
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.--footer-three-col {
+    color: #ffffff;
+    text-align: center;
+}
+
+.--footer-two-col-first a:hover,
+.--footer-two-col-second a:hover,
+.--footer-two-col-third a:hover,
+.--footer-two-col-four a:hover {
+    color: #ff4500;
+}
+
+.--footer-two-row .--footer-two-col-second .--links,
+.--footer-two-row .--footer-two-col-third .--links,
+.--footer-two-row .--footer-two-col-four .--links {
+    display: flex;
+}
+/* Footer component end here */
+
+
+@media only screen and (max-width: 850px) {
+    /* Header component start here */
+    .--header-two-row .--header-two-col-left {
+        width: 100%;
+    }
+
+    .--header-two-row .--header-two-col-left .--logo {
+        width: 70%;
+        display: flex;
+        margin: auto;
+    }
+
+    .--header-two-row .--header-two-col-right {
+        width: 100%;
+        padding-block: 25px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .--header-two-row .--header-two-col-right .--links {
+        padding: 0 55px 0 55px;
+    }
+
+    .--header-three-row .--header-three-col-left {
+        width: 100%;
+        text-align: end;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #3b4149;
+    }
+
+    .--header-three-row .--header-three-col-middle,
+    .--header-three-row .--header-three-col-right {
+        padding-top: 15px;
+        padding-bottom: 0;
+        width: 50%;
+    }
+    /* Header component end here */
+
+    /* Footer component start here */
+    .--footer-one-row .--footer-one-col-left {
+        width: 100%;
+    }
+
+    .--footer-one-col-left .--footer-one-col-left-title {
+        padding-bottom: 10px;
+    }
+
+    .--footer-one-row .--footer-one-col-right {
+        width: 90%;
+        margin: auto;
+    }
+
+    .--footer-two-row .--footer-two-col-first,
+    .--footer-two-row .--footer-two-col-second,
+    .--footer-two-row .--footer-two-col-third,
+    .--footer-two-row .--footer-two-col-four {
+        width: 50%;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .--footer-two-row .--footer-two-col-second .--links a,
+    .--footer-two-row .--footer-two-col-third .--links a,
+    .--footer-two-row .--footer-two-col-four .--links a {
+        margin-right: 0 !important;
+    }
+
+    .--social-icons {
+        justify-content: center;
+    }
+    /* Footer component end here */
+
+}
+
+@media only screen and (max-width: 550px) {
+    .--icons {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Header component start here */
+    .--header-two-row .--header-two-col-right .--links {
+        padding: 0 25px 0 25px;
+    }
+
+    .--header-two-row .--header-two-col-right-buttons a {
+        font-size: 12px;
+        gap: 5px;
+    }
+
+    .--header-three-row .--header-three-col-middle,
+    .--header-three-row .--header-three-col-right {
+        width: 100%;
+    }
+
+    .--header-three-row .--header-three-col-middle {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #3b4149;
+    }
+    /* Header component end here */
+
+    /* Footer component start here */
+    .--footer-two-row .--footer-two-col-first,
+    .--footer-two-row .--footer-two-col-second,
+    .--footer-two-row .--footer-two-col-third,
+    .--footer-two-row .--footer-two-col-four {
+        width: 100%;
+    }
+    /* Footer component end here */
+}
+
+@media only screen and (max-width: 370px) {
+    /* Header component start here */
+    .--header-two-row .--header-two-col-right-buttons p {
+        display: none;
+    }
+    /* Header component end here */
+
+    /* Footer component start here */
+    .--footer-one-col-left .--footer-one-col-left-title h4 {
+        font-size: 16px;
+    }
+
+    .--footer-three-col p {
+        font-size: 12px;
+    }
+    /* Footer component end here */
+}
